@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let YEAR = 2025;
+        let RATE = 0.92;
+
+        let name = prompt('Имя:');
+        if (name) alert('Привет, ' + name + '!');
+
+        let birth = +prompt('Год рождения:');
+        alert('Вам ' + (YEAR - birth) + ' лет.');
+
+        let side = +prompt('Длина стороны квадрата:');
+        alert('Периметр: ' + (4 * side));
+
+        let r = +prompt('Радиус окружности:');
+        alert('Площадь: ' + (Math.PI * r * r).toFixed(2));
+
+        let d = +prompt('Расстояние (км):');
+        let t = +prompt('За сколько часов:');
+        alert('Нужная скорость: ' + (d / t).toFixed(2) + ' км/ч');
+
+        let usd = +prompt('Доллары (USD):');
+        alert((usd * RATE).toFixed(2) + ' EUR');
+
+        let gb = +prompt('Объём флешки (ГБ):');
+        alert('Файлов по 820 МБ: ' + Math.floor(gb * 1024 / 820));
+    </script>
+</body>
+</html>
